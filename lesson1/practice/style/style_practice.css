@@ -1,0 +1,34 @@
+.p{
+    color: blueviolet;
+}
+
+.paragraph{
+    color: red;
+}
+
+/* Lorem text будет red потомучто class сильнее 
+все последуюшие тексты p без класса будут blueviolet 
+*/
+
+/* если .paragraph задать другой цвет ниже то он будет 
+того цвета который мв назначили последней потому-что 
+код читается сверху в низ
+*/
+
+#x{
+    color: green;
+}
+
+/* id сильнее чем class -> Lorem примет цвет id
+
+!important сильнее чем class и id -> Lorem примет цвет тогда p, так как 
+указан значение !important
+
+если сразу передать в html -> <p class="paragraph" id="x" style="color: pink"....
+будет сильнее всех 
+
+*/
+
+.p{
+    color: blueviolet !important;
+}
