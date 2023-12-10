@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script/script.js"></script>
+</head>
+<body>
+    <!-- JavaScript
+    компиляция кода c помошью -> Browser, Node.Js
+    програма для удобно написания кода (как ремонт лутчше в гараже а не на улице) IntelliJ IDEA, Visual Studio Code 
+
+    ================ типы данных: ================ 
+
+    ================================  приметивный: -> name:'Alice', ================================   
+    для каждого значение саздоются новые ячейки(компелятор с верху в низ)
+    string
+    number
+    boolean
+    null
+    underfiend
+    bigint
+    symbol
+    
+    ----- 1.  приметивный ----- 
+    let a = "78";
+    leb b = a; 
+    a = 45;
+
+    consol.log(a);
+    consol.log(b);
+    Consol: a= 45, b= 78
+
+    ==== number ===
+    let num = 165;
+    
+    ==== string ===
+    let str = "hello JS";
+    let str1 = 'hello JS'; \n -> перенос строк
+    let str2 = `hello JS ${num * 999}`; интерполяция
+    let str2 = `hello JS ${num 
+                -> перенос строк
+        999}`;
+
+    ==== boolean ===
+    let isAdmin = true; // or false
+
+    ==== null ===
+    let name = null;
+    consol.log(typeOf null);   -> Consol: "object" ошибка разработчика Java Script, так как должно показывать null но покаывает object
+
+    ==== underfined ===
+    let lastName = undefined; -> значение от программы (Server)
+
+
+
+
+    ================================ не преметивный: сылочные значения ================================ 
+    let arr = [1, 2, 3]
+    содержат в себе приметивы переменные
+    ==== object - n/p ===
+    пример:
+    let userNumber {
+        name:'Alice',
+        age: 23,
+        friends: [1, 2, 3],
+        isAdmin: true,
+        address: {
+            city: "Berlin",
+            country: "USA"
+        }
+        "name of user": "Maik" -> ковычки для пробела
+    }
+    // добавление значение в обект
+    userNumber.trip = "Berlin"
+
+    // удаление
+    delete userNumber.age;
+
+    consol.log(userNumber[2]) -> Consol:3
+    consol.log(userNumber.address.country); -> Consol: USA
+    consol.log(userNumber.["name of user"]);
+
+    // вывод всех 
+    consol.log(Object.values(userNumber));
+    consol.log(Object.keys(userNumber));
+    consol.log(Object.entries(userNumber));
+
+
+
+    ----- 1. не преметивный  ----- 
+    индекс
+           0   1   2    3    4
+    let a [1, 2, false, 0, "hello"] 
+    consol.log(a[2]) -> a[2] -> 2= index массива
+
+    ----- 2. не преметивный ----- 
+    let a = ["1", 2, false, 0, "hello"]
+    a[0] = "hello"  
+    console.log(a); Consol: ["hello", "1", 2, false, 0]
+
+     ----- 3. не преметивный ----- 
+    создоётся ячейки с link (если содержимое в 1.массивом меняется - так как линк был скопирован 
+    -> содержимое меняется у 2.массива -> содержимое стаёт у обоих одинакова)
+    let arr = [1, 2, 3]
+    let arr2 = arr;
+
+    arr[0] = 999;      -> arr[0] - index 0
+    consol.log(arr);
+    consol.log(arr2);
+    Consol: arr [999, 2, 3]
+            arr2 [999, 2, 3]
+
+    
+
+    let userData {
+        name:'Alice',
+        age: 23,
+    }
+    let userData2 = userData;
+    let userData3 = userData4;
+
+    userData = 16;
+    consol.log(userData); -> Consol: age 16
+    consol.log(userData2); -> Consol: age 16
+    consol.log(userData3); -> Consol: age 16
+
+    ----- 4. не преметивный (у каждого разное -> линк у каждого разный) ----- 
+    let arr = [1, 2, 3]
+    let arr2 = [1, 2, 3]
+    arr[0] = 999;  
+
+    consol.log(arr);
+    consol.log(arr2);
+    Consol: arr [999, 2, 3]
+            arr2 [1, 2, 3]
+
+
+
+
+
+    ========== if(){} / loops / functions / str + str ==========
+    let a = 0;
+    if( 1 === 2 ){
+        a = 5
+    }else{
+        a = -5
+    }
+    consol.log("a"); -> -5
+
+    --- цикл ---
+    for(let i=0, i<10; i++){
+        consol.log("Hello" + i); Consol: 1.Hello ...10x 
+    } 
+
+    == 1. ==
+    let name = "Alice"
+    for(let i=0, i<name.length; i++){
+        consol.log(name[i]); Consol: A   l   i ...
+    } 
+    == 2. ==
+    let arr = [78, 56, 99, 12, 44, 54]
+    for(let i=0, i<arr.length; i++){
+        consol.log(arr[i]);
+    } 
+
+    == 3. == 
+    let arr = [78, -56, 99, -12, 44, -54]
+    for(let i=0, i<arr.length; i++){
+        if (arr[i] >= 0) {
+            console.log(arr[i]);
+        }
+    } Consol: 78, 99, 44
+
+
+
+    == 4. ==
+    for(let i = 1; i <= 10; i++){
+        for(let j = 1; j <= 10; j++){
+            console.log(`${i} *  ${j} = ${i * j}`);
+        } 
+        console.log('=========================');
+    }
+
+    == 5. ==
+    let i = 0;
+    for(; i <= 10 ;){
+        console.log(i);
+        i++;
+    }
+
+
+    
+    ================= while ===============
+    let i = 0;
+    --- при false не отработает  ---
+    while (i < 5) {
+        console.log(i);
+        i++;
+    }
+
+    ================= do while ===============
+    --- при false do while отроботает do 1 раз и зайдёт в while --- 
+    do {
+        console.log(i);
+        i++;
+    } while (i < 5);
+
+
+    ================= function ===============
+
+    == declared == -> если начинается инструкция с f то это declared
+    function sum(params) {}
+
+    function sum(num1, num2) {
+        return num1 + num2;
+    }
+    let result = sum(4, 3);
+    consol.log(result);
+
+    == expression ==
+    1. 
+    let sum = () => {}
+    2.
+    let sum = function(){}
+
+    ====================== var, let, const ======================
+до 2015
+    var
+c 2015
+    == let ==
+    преметив -> let
+    let v =  4;
+    v = 5;
+    consol.log(v) -> 5
+
+
+    == const ==
+    // нельзя заменять
+    // использовать когда мы точно знаем что не будем менять
+    const v =  4;
+    v = 5; -> error
+    не преметив (массив, обект)-> const
+    const arr = [0, 1, 2];
+    consta arr1 = {
+        name: lvfvb
+        age:...
+    }
+    можно заменить через   arr.name="sdfg"   
+    если потребуется
+
+
+
+
+-->
+
+
+</body>
+</html>

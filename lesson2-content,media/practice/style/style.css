@@ -1,0 +1,93 @@
+/* ------------------- 1 -------------------- */
+/* премые потомки класса red */
+.red > p{
+    color: red;
+}
+
+
+/* ------------------- 2 -------------------- */
+/* зделать один элемент (потомок) другово цвета 
+:nth-child(2n)-> чётные
+:nth-child(3n)-> каждый 3 элемент 
+:first-child -> любой первый элемент 
+:nth-child(3) -> только третий элемент
+li:first-child -> первый элемент от li 
+span:first-child -> первый элемент от span 
+(но li/span должен быть верху который будет евлятся первым потомком)
+1.span 
+    <ul>
+        <span>list1</span>
+        <li>list2</li>
+2. li
+    <ul>
+        <li>list2</li>
+        <span>list1</span>
+*/
+.ul1 :nth-child(3){
+    color: pink;
+}
+
+
+/* ------------------- 3 -------------------- */
+/* Жирный шрифт для первого элемента списка */
+.ul2 li:first-child {
+    font-weight: bold;
+}
+
+/* Курсив для последнего элемента списка */
+.ul2 li:last-child {
+    font-style: italic;
+}
+
+/* Фоновый цвет для нечетных элементов списка */
+.ul2 li:nth-child(odd) {
+    background-color: #e0e0e0; /* Замените цвет на нужный вам */
+}
+
+/* Фоновый цвет для четных элементов списка */
+.ul2 li:nth-child(even) {
+    background-color: #dea5a5; /* Замените цвет на нужный вам */
+}
+
+
+/* ------------------- 4 -------------------- */
+/* После посещения */
+a:visited {
+    color: rgb(228, 18, 228); 
+}
+
+/* Когда наводим курсор */
+a:hover {
+    color: black; 
+}
+
+/* Когда сфокусированный */
+a:focus {
+   color: blue; 
+}
+
+/* Когда нажимаем */
+button:active {
+    background-color: green; 
+}
+
+/* Когда наводим курсор */
+button:hover {
+    color: rgb(228, 0, 0); 
+}
+
+
+/* ------------------- 5 -------------------- */
+.p1::first-letter {
+    font-weight: bold;
+    font-size: 140%;
+}
+  
+.p1::first-line {
+    color: red;
+}
+
+.p1::before{
+    content: "...";
+    display: block; /*по умолчанию inline*/
+}
