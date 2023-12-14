@@ -1,0 +1,57 @@
+/* 
+Десятичная: 0,1,2,3,4,5,6,7,8,9
+Шестнадцатеричная: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+a2f5402 -> a*16^6 + 2*16^5 + f*16^4 + 5*16^3 + 4*16^2 + 2*16^1
+10*16^6 + 2*16^5 + 15*16^4 + 5*16^3 + 4*16^2 + 2*16^1 = 26424150 */ 
+
+/* 1. Задание */
+.div1{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px; /* normal quadrat: 300px 300px, 300px, 300px
+    border-radius: 150px/120px; ->  (x/y) */
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+/*256 red, 256 green, 256 blue (256^3 -> 256 в кубе) вариантов -> #ff0000
+16 (16^3 -> 16 в кубе) вариантов -> #f00 */
+
+
+/* 2. Задание */
+.div2{
+    width: 0px;
+    border-bottom: 100px solid black;
+    border-left: 50px solid rgb(0, 110, 255);
+    border-right: 50px solid rgb(0, 110, 255);
+}
+
+/* 3. Задание */
+.div3{
+    width: 0px;
+    border-bottom: 100px solid black;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+}
+
+/* 4. Задание */
+.div4{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-bottom: 100px solid black;
+    border-top: 100px solid rgb(87, 190, 234);
+    border-left: 100px solid rgb(140, 80, 199);
+    border-right: 100px solid rgb(96, 221, 140);
+}
+
+/* 5. Задание */
+.div5 {
+    width: 0;
+    height: 0;
+    border-top: 100px solid black;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+}
+

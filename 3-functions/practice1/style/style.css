@@ -1,0 +1,145 @@
+/*[] {}*/
+
+
+/* 1. Задание */
+.box > p,
+.box > div {
+    color: rgb(161, 73, 181);
+}
+
+
+/* 2. Задание 
+ a[href='###'] {
+    color: green;
+} */
+
+
+
+/* 3. Задание */
+a:visited{
+    color: rgb(255, 0, 242);
+}
+a:focus{
+    color: blue;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+}
+a:active{
+    color: rgb(246, 27, 27);
+}
+
+
+/* 4. Задание */
+ul li:first-child{
+    color: rgb(246, 27, 27);
+}
+ul li:last-child{
+    color: rgb(246, 148, 27);
+}
+ul li:nth-child(4n){
+    color: rgb(115, 27, 246);
+}
+
+
+/* 5. Задание */
+.p1::first-letter{
+    font-size: large;
+    font-weight: bold;
+}
+.p1::first-line{
+    color: red;
+}
+.p1::before{
+    content: "...";
+    display: block;
+}
+.p1::after{
+    content: "...";
+    display: block;
+}
+
+
+/* 6. Задание */
+.div1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(71, 125, 173);
+}
+
+/* rgb(71, 125, 173); в обшем 255 (Десятичная система счисления)
+-> 1.сила red цвета / 2.сила green цвета / 3.сила blue цвета 
+
+
+rgba(71, 125, 173б 0); 
+-> a(0.5 / 1 не прозрачность / 0 прозрачность)
+
+    #ffff (Шестнадцатеричная система счисления)
+    #aabbaa
+    #0000
+
+
+hsl(360, 50%, 50%)  как круг -> 360 = red
+                                120 = green
+                                240 = blue hsla (240, 100%, 50%, 0.5)
+
+    
+Пример представления числа 10 в этих системах:
+
+Десятичная: 0,1,2,3,4,5,6,7,8,9
+Шестнадцатеричная: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+Десятичная: 10
+Шестнадцатеричная: A
+Двоичная: 1010
+
+зада на пирёт
+   543210 <-
+-> 1fe627 = 7*16^0 + 2*16^1 + 6*16^2 + 14*16^3 + 15*16^4 + 1*16^5
+
+
+ff = 15*16^0 + 15*16^1 = 255
+*/
+
+
+/* 7. Задание */
+.div2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(blue 50%, yellow 50%);
+    /* background: linear-gradient(blue, yellow 20%); */
+}
+
+/* 8. Задание */
+.div3 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(71, 71, 169) 20%, rgb(145, 54, 147) 80%);
+    /* background: linear-gradient(    210deg     rgb(71, 71, 169) 20%, rgb(145, 54, 147) 80%); 
+                                     210deg   -> градус направления*/
+
+}
+
+/* 9. Задание */
+.div4 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(blue 20%, rgb(170, 207, 250) 50%, rgb(71, 130, 185) 90%);
+}
+
+/* 10. Задание */
+.div5 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(rgb(71, 71, 169) 20%, rgb(145, 54, 147) 80%);
+    /* background: radial-gradient(   at 20% 20%      rgb(71, 71, 169) 20%, rgb(145, 54, 147) 80%); 
+                                    at -> направления центра  */
+}
+
+/* 11. Задание */
+.div6 {
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(pink,lightblue,green 20%)
+}
