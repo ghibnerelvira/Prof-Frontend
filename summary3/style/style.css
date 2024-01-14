@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+div{
+    background-color: lightblue;
+    width: 950px;
+    height: 900px;
+}
+
+/* Heroku */
+@media (max-width: 400px) {
+    div{
+        background-color: lightcoral;
+    }
+}
+
+/* 
+Absolute units of measurement
+- px -> остается всегда одинакоо на разных экраннах -> фиксированный
+
+Relative units of measurement
+- %  - размер от body -> фиксированный от body
+container - не использовать
+
+200% body, div -> width:50% --> 100% в body с размером 200% 
+width:50%, 400% body -> 200% размер div
+
+p{
+    font-size: 50% 
+}
+50% от радительского(main) элемента font-size 
+
+
+- (vw - view width, vh - view height) -> width:50vw, height:50vh - размер от экрана(для уведомление, реклама, деологовое окно, popup)
+
+
+- rem - от html тега (остальное игнорируется) не используется часто
+1rem = 100%
+
+
+- em  - от радителя  1 в 1 свойства %
+1em = 100%
+0.5em = 50%
+
+
+
+
+
+
+
+*/

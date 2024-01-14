@@ -1,0 +1,22 @@
+/* []{} */
+
+.p1 {
+    color: blueviolet;
+}
+
+/*
+приорететность:
+
+#id{}       id              0 1 0 0
+.class{}    class/attrb     0 0 1 0
+p{}         tag             0 0 0 1
+*{}         *               0 0 0 0
+
+
+.class .a .b .c .d{}        0 0 5 0  // указать 1000 class некогда не перебют id
+.class .a p{}               0 0 2 1
+
+// силные
+body > p > #text{}
+body{}
+*/

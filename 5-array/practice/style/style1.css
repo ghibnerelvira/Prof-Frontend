@@ -1,0 +1,92 @@
+*{
+    margin: 14px;
+    border-radius: 10px;
+}
+body {
+    height: 400px;
+    width: 600px;
+}
+
+.header{
+    background-color: rgb(213, 83, 96);
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 45px;
+}
+
+.container {
+    display: flex;
+}
+
+.blue, .yellow, .pink {
+    flex: 1;
+    margin: 10px;
+    padding: 1px; 
+    text-align: center;
+}
+
+.blue {
+    background-color: rgb(83, 152, 213);
+}
+
+.yellow {
+    background-color: rgb(228, 217, 59);
+}
+
+.pink {
+    background-color: rgb(206, 92, 187);
+}
+
+.footer{
+    background-color: rgb(130, 216, 77);
+    text-align: center;
+    padding: 10px;
+}
+
+/* * {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .header {
+    background-color: red;
+    padding: 24px;
+    flex-basis: 100%;
+    order: 1;
+  }
+  
+  .main {
+    background-color: rgb(20, 118, 151);
+    order: 3;
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  
+  .aside1 {
+    background-color: yellow;
+    flex-basis: 20%;
+    order: 2;
+    flex-grow: 1;
+  }
+  
+  .aside2 {
+    background-color: pink;
+    flex-grow: 1;
+    order: 4;
+    flex-basis: 20%;
+  }
+  
+  .footer {
+    background-color: lightgreen;
+    flex-basis: 100%;
+    order: 5;
+  } */

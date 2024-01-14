@@ -1,0 +1,50 @@
+*{
+    margin: 14px;
+    border-radius: 10px;
+}
+body {
+    height: 400px;
+    width: 600px;
+}
+
+.header{
+    background-color: rgb(213, 83, 96);
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 45px;
+}
+
+.blue{
+    background-color: rgb(83, 152, 213);
+    padding: 10px;
+    padding-bottom: 150px;
+}
+
+
+.container {
+    display: flex;
+}
+
+.yellow, .pink {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.yellow{
+    background-color: rgb(228, 217, 59);
+    /* text-align: center;
+    padding: 5px; */
+}
+
+.pink{
+    background-color: rgb(206, 92, 187);
+    /* text-align: center;
+    padding: 5px; */
+}
+
+.footer{
+    background-color: rgb(130, 216, 77);
+    text-align: center;
+    padding: 10px;
+}
