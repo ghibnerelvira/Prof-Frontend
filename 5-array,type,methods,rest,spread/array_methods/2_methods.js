@@ -335,6 +335,55 @@ let fruits3 = ["Яблоко", "Вишня", "Арбуз", "Мандарин", "
 console.log(fruits3.findIndex(elem => elem.length === 6));
 
 // let result14 = fruits3.filter((elem) => elem.length === 6)
-// console.log(result14);
+// console.log(result14); // Consol: index=0 -> "Яблоко"
 
 
+// ========================================================== reduce()  ===========================================================
+// reduce() - метод, который позволяет решать аналитическии задачи (средниее значение, сумма значение, количество и тд.)
+// возвращает итоговое значение аккумулятора
+
+// -----
+// поиск сумму всех значений  без метода reduce() -> for
+let array7 = [1,2,3,4,5]
+let sum = 0 // переменная акамулятор для сохранение каждой итерации обезательно! multiplication нужно указать 1
+for(let elem of array7){
+    sum += elem //sum *= elem  // sum *= elem / array.lenght -> 1.вариант: средние значение
+}console.log(sum); // console.log(sum / array.lenght); -> 2.вариант: средние значение
+
+// -----
+// reduce()
+let array8 = [1,2,3,4,5]
+let sum1 = array8.reduce((accum, elem) => accum + elem) // accum -> accumulator
+                                        // accum * elem , 0 // accum ** elem
+console.log(sum1);
+
+
+// средние значение
+let array9 = [1,2,3,4,5]
+let sum2 = array8.reduce((accum, elem) => accum + elem / array9.length, 0) 
+console.log(sum2);
+
+
+// Посчитайте в одной переменной произведеное, в другой сумму значений в массиве numbers
+let numbers12 = [3,3,3,3,4]
+let sum3 = numbers12.reduce((accum, elem) => accum + elem, 0)
+let sum4 = numbers12.reduce((accum, elem) => accum * elem, 1)
+console.log(sum3, sum4);
+
+
+
+// задачи на возраст
+let users2 = [
+    {id: 4, age: 30, name: 'Alex'},
+    {id: 5, age: 20, name: 'Steven'},
+    {id: 2, age: 40, name: 'Neena'},
+    {id: 1, age: 50, name: 'John'},
+    {id: 3, age: 30, name: 'Grend'}
+]
+// 1. Посчитайте сумму всех возрастов
+let sum5 = users2.reduce((accum, elem) => accum + elem.age, 0)
+console.log(sum5);
+
+// 2. Рассчитать средний возраст сотрудников
+let sum6 = users2.reduce((accum, elem) => accum + elem.age / users2.length, 0)
+console.log(sum6);

@@ -1,0 +1,36 @@
+.users_wrapper {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 25px;
+}
+.user_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 40px;
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.forms > form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}

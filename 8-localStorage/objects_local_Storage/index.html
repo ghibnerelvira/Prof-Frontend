@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./objects_local_Storage.js"></script>
+</head>
+<body>
+    <div class="forms">
+        <form class="add_form">
+            <h2>Новый товар</h2>
+            <input name="title" placeholder="title" required/>
+            <input name="price" placeholder="price" required/>
+            <input type="submit"/>
+        </form>
+        <form class="remove_form">
+            <h2>Удаление по ID</h2>
+            <input type="number" name="id">
+            <input type="submit"/>
+        </form>
+    </div>
+    <div class="product_wrapper"></div>
+
+</body>
+</html>

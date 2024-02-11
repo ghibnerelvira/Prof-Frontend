@@ -1,0 +1,40 @@
+/* body {
+    font-family: "Arial";
+}
+ul {
+    max-width: 80%;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    padding: 20px;
+}
+   */
+li {
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin: 14px;
+    box-shadow: 3px 3px 3px rgb(119, 119, 119);
+    transition: transform 0.2s ease-in-out;
+}
+  
+/* li:hover {
+    box-shadow: 5px 5px 5px rgb(44, 44, 44);
+    transform: scale(1.03);
+}
+  
+h1 {
+    color: black;
+}
+  
+h2 {
+    color: rgb(243, 233, 93);
+}
+  
+h3 {
+    color: rgb(46, 81, 210);
+}
+  
+p {
+    color: rgb(255, 66, 66);
+} */

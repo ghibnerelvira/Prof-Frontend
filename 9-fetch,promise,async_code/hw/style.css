@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.photos_container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.photo_card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Выравнивание по горизонтали по центру */
+    justify-content: flex-end; /* Выравнивание по вертикали вниз */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-bottom: 50px; /* Установление нижнего отступа */
+}
+
+h2 {
+    overflow-wrap: break-word; /* перенос текста на другую строку */
+    padding-bottom: 10px;
+}
