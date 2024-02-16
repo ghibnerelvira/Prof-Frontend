@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* NAV MENU */
+header{
+    background-color: rgb(31, 59, 99);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-size: 23px;
+    
+}
+.header a{
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+.header .a{
+    display: flex;
+    gap: 30px;
+}
+
+.header nav{
+    display: flex;
+    gap: 30px;
+}
+
+.nav div{
+    display: flex;
+    gap: 30px;
+}
+/*  меняется цвет icon */
+.fa-toggle-on {
+    color: rgb(220, 220, 220);
+}
+.fa-bars {
+    color: rgb(220, 220, 220);
+}
+
+.light_mode{
+    background-color: #e3be58;
+}
+.light_mode a{
+    color: black
+}
+.light_mode i{
+    color: black
+}
+
+.header .burger_menu{
+    display: none;
+}
+
+.header nav > div:last-child {
+    display: flex;
+    gap: 30px;
+}
+
+
+@media(max-width: 800px){
+    .header{
+        position: relative;
+    }
+
+    .header .burger_menu{
+        display: inline;
+    }
+    
+    .header .a{
+        flex-direction: column;
+        position: absolute;
+        /* border: 2px solid rgb(31, 59, 99); */
+        background-color: rgb(31, 59, 99);
+        right: 0;
+        top: 100%;
+        width: 120px;
+        padding: 10px;
+        display: none;
+    }
+    .header .a.active{
+        display: flex;
+    }
+
+    .light_mode .a{
+        background-color: #e3be58;
+    }
+    .light_mode .a{
+        color: black
+    }
+}
+/* .burger_menu.active -> class="burger_menu active" */
+
+
+
+/* MODAL WINDOW */
+p{
+    color: rgb(220, 220, 220);
+    font-size: 23px;
+}
+
+.light_mode p{
+    color: black
+}
+.popup{
+   position: fixed;
+   background-color: rgb(0,0,0, 0.6);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+.popup.opened{
+    display: flex;
+}
+
+.popup_content{
+    background-color: white;
+    width: 420px;
+    padding: 32px;
+    border-radius: 20px;
+}
